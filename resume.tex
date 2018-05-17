@@ -1,0 +1,144 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Mathew Varughese}}\\
+	matvarughese3@gmail.com $\cdot$ (215) 495 3097 $\cdot$ github.com/varughese\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Pittsburgh}\hfill Pittsburgh, PA\\
+B.S. Computer Science, Minor in Mathematics \textbf{GPA: 4.0} \hfill  Expected Graduation: April 2020\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{JPMorgan Chase} \hfill Houston, TX\\
+\textit{Software Engineer Intern, CT Data Acquisition} \hfill June 2018 | Aug 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Awaiting completition
+\end{itemize}
+\textbf{Interactive Multimedia Group} \hfill Horsham, PA\\
+\textit{Fullstack Engineer} \hfill July 2015 | May 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Launched six enterprise-level web applications, with a combined total of about 1000 daily users
+	\item Contributed to in-house framework containing over 15,000 lines of unit-tested code called “NoInfoPath” which reduced application development time by about 60\%
+	\item Developed and co-architected a drag-and-drop web-application builder that generated NoInfoPath applications
+	\item Researched new tools like SASS and Webpack in my personal time and taught them to the team
+	\item Led client discussions and translated their requirements into JIRA tickets
+	\item Worked on multiple projects simultaneously with strict deadlines and still managed to finish ahead of schedule
+	\item Developed offline-first data synchronization and change-tracking system with SocketIO, MySQL, MongoDB, and IndexedDB
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Languages: & JavaScript, HTML/CSS, Java, C, C++, SQL, Python                        \\
+	Other:     & Node.js, ReactJS, AngularJS, Express.js, SocketIO, SASS, MongoDB, Unix \\
+	Tools:     & Postman, Photoshop, Illustrator                                        \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Selected Projects}
+{\textbf{Megabus Ticket Finder}}\hfill https://github.com/varughese/megabus-ticket-finder\\
+Finds deals to save users up to 80\% on bus tickets. ReactJS frontend shows cheapest tickets given a date range. Backend service sends email notifications triggered by price changes.\\
+\vspace*{2mm}
+{\textbf{NeuroLog}}\hfill https://github.com/varughese/neuro-log\\
+An interactive web diary for patients with mental health disorders built with AngularJS, Flask, and MySQL. Performs analysis on entries with IBM Watson (Artificial Intelligence).\\
+\vspace*{2mm}
+{\textbf{Deriver}}\hfill https://github.com/varughese/deriver\\
+Parses a mathematical string like “4x\textasciicircum{}3+(sinx)\textasciicircum{}3” and uses algorithm to calculate the derivative.\\
+\vspace*{2mm}
+
+\header{Awards and Leadership}
+\textbf{Vice President of Pitt Computer Science Club} \hfill Current\\
+
+\vspace*{2mm}
+\textbf{1st at JPMorgan Code for Good Hackathon} \hfill Nov 2017 \\
+Built AngularJS web portal to streamline scholarship nomination process for a non-profit \\
+\vspace*{2mm}
+\textbf{2nd Place at Kent Hack Enough Hackathon}  \hfill Oct 2017 \\
+Built FocusApp, a weekly goal tracker for Android and the web \\
+\vspace*{2mm}
+\textbf{Salutatorian of Hatboro Horsham High School} \hfill June 2017 \\
+\vspace*{2mm}
+\textbf{President \& Cofounder Computer Science Club of Hatboro-Horsham High School}\\
+
+\vspace*{2mm}
+
+\ 
+\end{document}
